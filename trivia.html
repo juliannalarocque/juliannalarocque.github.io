@@ -1,0 +1,784 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Disney Trivia</title>
+        <style type="text/css">
+            body{
+                background-image: url('images/disney.gif');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-color:navy;
+                margin-left: 35%;
+                margin-top: 20%;
+                color: white;
+                font: .5cm;
+            }
+        </style>
+        <script>
+            var n = 0
+            var i = 1
+            var o = 0
+            
+            
+            function support(){
+                y = document.getElementById("qans").value
+                var yy=y.toUpperCase();
+                x = document.getElementById("question").value
+                
+                
+                if (o===0){
+                    y = document.getElementById("qans").value
+                    document.view.qscore.value=n
+                    if(yy==="C"){
+                        
+                        document.getElementById("question").value="You answered right!"
+                        n=n+1
+                    }
+                    
+                    
+                    else {
+                        document.getElementById("question").value="You are wrong :("
+                        n=n
+                        
+                    }
+                    
+                }
+                
+                
+                else if (o===1){
+                    y = document.getElementById("qans").value
+                    document.view.qscore.value=n
+                    if(yy==="A"){
+                        
+                        
+                        document.getElementById("question").value="You are correct!"
+                        n=n+1
+                    }
+                    
+                    
+                    else {
+                        document.getElementById("question").value="You are wrong"
+                        n=n
+                    }
+                }
+                
+                
+                else if (o===2){
+                    
+                    
+                    y = document.getElementById("qans").value
+                    
+                    
+                    document.view.qscore.value=n
+                    
+                    
+                    if(yy==="B"){
+                        
+                        
+                        document.getElementById("question").value="You are right"
+                        
+                        
+                        n=n+1
+                        
+                        
+                    }
+                    
+                    
+                    else {
+                        
+                        
+                        document.getElementById("question").value="You are wrong"
+                        
+                        
+                        n=n
+                        
+                        
+                    }
+                    
+                    
+                }
+                
+                
+                else if (o===3){
+                    
+                    
+                    y = document.getElementById("qans").value
+                    
+                    
+                    document.view.qscore.value=n
+                    
+                    
+                    if(yy==="D"){
+                        
+                        
+                        document.getElementById("question").value="You are right"
+                        
+                        
+                        n=n+1
+                        
+                        
+                    }
+                    
+                    
+                    else {
+                        
+                        
+                        document.getElementById("question").value="You are wrong"
+                        
+                        
+                        n=n
+                        
+                        
+                    }
+                    
+                    
+                }
+                
+                
+                else if (o===4){
+                    
+                    
+                    y = document.getElementById("qans").value
+                    
+                    
+                    document.view.qscore.value=n
+                    
+                    
+                    if(yy==="B"){
+                        
+                        
+                        document.getElementById("question").value="You are right"
+                        
+                        
+                        n=n+1
+                        
+                        
+                    }
+                    
+                    
+                    else {
+                        
+                        
+                        document.getElementById("question").value="You are wrong"
+                        
+                        
+                        n=n
+                        
+                        
+                    }
+                    
+                    
+                }
+                
+                
+                else if (o===5){
+                    
+                    
+                    y = document.getElementById("qans").value
+                    
+                    
+                    document.view.qscore.value=n
+                    
+                    
+                    if(yy==="C"){
+                        
+                        
+                        document.getElementById("question").value="You are right"
+                        
+                        
+                        n=n+1
+                        
+                        
+                    }
+                    
+                    
+                    else {
+                        
+                        
+                        document.getElementById("question").value="You are wrong"
+                        
+                        
+                        n=n
+                        
+                        
+                    }
+                    
+                    
+                }
+                
+                
+                else if (o===6){
+                    
+                    
+                    y = document.getElementById("qans").value
+                    
+                    
+                    document.view.qscore.value=n
+                    
+                    
+                    if(yy==="B"){
+                        
+                        
+                        document.getElementById("question").value="You are right"
+                        
+                        
+                        n=n+1
+                        
+                        
+                    }
+                    
+                    
+                    else {
+                        
+                        
+                        document.getElementById("question").value="You are wrong"
+                        
+                        
+                        n=n
+                        
+                        
+                    }
+                    
+                    
+                }
+                
+                
+                else if (o===7){
+                    
+                    
+                    y = document.getElementById("qans").value
+                    
+                    
+                    document.view.qscore.value=n
+                    
+                    
+                    if(yy==="C"){
+                        
+                        
+                        document.getElementById("question").value="You are right"
+                        
+                        
+                        n=n+1
+                        
+                        
+                    }
+                    
+                    
+                    else {
+                        
+                        
+                        document.getElementById("question").value="You are wrong"
+                        
+                        
+                        n=n
+                        
+                        
+                    }
+                    
+                    
+                }
+                
+                
+                else if (o===8){
+                    
+                    
+                    y = document.getElementById("qans").value
+                    
+                    
+                    document.view.qscore.value=n
+                    
+                    
+                    if(yy==="A"){
+                        
+                        
+                        document.getElementById("question").value="You are right"
+                        
+                        
+                        n=n+1
+                        
+                        
+                    }
+                    
+                    
+                    else {
+                        
+                        
+                        document.getElementById("question").value="You are wrong"
+                        
+                        
+                        n=n
+                        
+                        
+                    }
+                    
+                    
+                }
+                
+                
+                else if (o===9){
+                    
+                    
+                    y = document.getElementById("qans").value
+                    
+                    
+                    document.view.qscore.value=n
+                    
+                    
+                    if(yy==="B"){
+                        
+                        
+                        document.getElementById("question").value="You are right"
+                        
+                        
+                        n=n+1
+                        
+                        
+                    }
+                    
+                    
+                    else {
+                        
+                        
+                        document.getElementById("question").value="You are wrong"
+                        
+                        
+                        n=n
+                        
+                        
+                    }
+                    
+                    
+                }
+                
+                else if (o===10){
+                    
+                    
+                    y = document.getElementById("qans").value
+                    
+                    
+                    document.view.qscore.value=n
+                    
+                    
+                    if(yy==="D"){
+                        
+                        
+                        document.getElementById("question").value="You are right"
+                        
+                        
+                        n=n+1
+                        
+                        
+                    }
+                    
+                    
+                    else {
+                        
+                        
+                        document.getElementById("question").value="You are wrong"
+                        
+                        
+                        n=n
+                        
+                        
+                    }
+                    
+                    
+                }
+                
+                else if (o===11){
+                    
+                    
+                    y = document.getElementById("qans").value
+                    
+                    
+                    document.view.qscore.value=n
+                    
+                    
+                    if(yy==="C"){
+                        
+                        
+                        document.getElementById("question").value="You are right"
+                        
+                        
+                        n=n+1
+                        
+                        
+                    }
+                    
+                    
+                    else {
+                        
+                        
+                        document.getElementById("question").value="You are wrong"
+                        
+                        
+                        n=n
+                        
+                        
+                    }
+                    
+                    
+                }
+                else if (o===12){
+                    
+                    
+                    y = document.getElementById("qans").value
+                    
+                    
+                    document.view.qscore.value=n
+                    
+                    
+                    if(yy==="A"){
+                        
+                        
+                        document.getElementById("question").value="You are right"
+                        
+                        
+                        n=n+1
+                        
+                        
+                    }
+                    
+                    
+                    else {
+                        
+                        
+                        document.getElementById("question").value="You are wrong"
+                        
+                        
+                        n=n
+                        
+                        
+                    }
+                    
+                    
+                }
+                else if (o===13){
+                    
+                    
+                    y = document.getElementById("qans").value
+                    
+                    
+                    document.view.qscore.value=n
+                    
+                    
+                    if(yy==="B"){
+                        
+                        
+                        document.getElementById("question").value="You are right"
+                        
+                        
+                        n=n+1
+                        
+                        
+                    }
+                    
+                    
+                    else {
+                        
+                        
+                        document.getElementById("question").value="You are wrong"
+                        
+                        
+                        n=n
+                        
+                        
+                    }
+                    
+                    
+                }
+           
+           
+                o++;
+                
+                
+            }
+        
+        
+        function main(){
+            
+            
+            if (i===1){
+                
+                
+                document.view.qnum.value=i;
+                
+                
+                document.view.qscore.value=0;
+                
+                
+                document.view.question.value ="What colour dress does Cinderella wear to the ball?\na) Yellow\nb) White\nc) Blue\nd) Pink";
+                
+                
+                document.view.qans.value=""
+                
+                
+            }
+            
+            
+            else if (i===2){
+                
+                
+                document.view.qnum.value=i;
+                
+                
+                document.view.question.value ="Who was the first Disney princess?\na) Snow White\nb) Belle\nc) Aurora\nd) Pocahontas";
+                
+                
+                document.view.qans.value=""
+                
+                
+            }
+            
+            
+            else if (i===3){
+                
+                
+                document.view.qnum.value=i;
+                
+                
+                document.view.question.value ="In The Little Mermaid, what was the name of the sea witch who took Ariel's voice?\na) Cruella De.Vil\nb) Ursula\nc) Scar\nd) Lady Tremaine";
+                
+                
+                document.view.qans.value=""
+                
+                
+            }
+            
+            
+            else if (i===4){
+                
+                
+                document.view.qnum.value=i;
+                
+                
+                document.view.question.value ="Which one of these songs does Olaf sing in the movie Frozen?\na) A Whole New World\nb) Let it Go\nc) For the First Time in Forever\nd) In Summer";
+                
+                
+                document.view.qans.value=""
+                
+                
+            }
+            
+            
+            else if (i===5){
+                
+                
+                document.view.qnum.value=i;
+                
+                
+                document.view.question.value ="What are the names of Ariel’s three friends in The Little Mermaid?\na) Sebastian, Fredward, Steven\nb) Scuttle, Sebastian, Flounder\nc) Flounder, Scuttle, Steven\nd) Fredward, Scurry, Flowy";
+                
+                
+                document.view.qans.value=""
+                
+                
+            }
+            
+            
+            else if (i===6){
+                
+                
+                document.view.qnum.value=i;
+                
+                
+                document.view.question.value ="When did Maleficent say the curse would occur on Aurora?\na) Before the Moon rises\nb) After the Sun sets\nc) Before the Sun rises\nd) After the moon sets";
+                
+                
+                document.view.qans.value=""
+                
+                
+            }
+            
+            
+            else if (i===7){
+                
+                
+                document.view.qnum.value=i;
+                
+                
+                document.view.question.value ="Which one of these songs was not nominated for an Academy Award in the category Best Original Song for the movie The Lion King?\na) Can You Feel the Love Tonight\nb) I Just Can’t Wait to be King\nc)Circle of Life\nd) Hakuna Matata";
+                
+                
+                document.view.qans.value=""
+                
+                
+            }
+            
+            
+            else if (i===8){
+                
+                
+                document.view.qnum.value=i;
+                
+                
+                document.view.question.value ="How many dwarfs did Snow White have?\na) 3\nb) 5\nc) 7\nd) 12";
+                
+                
+                document.view.qans.value=""
+                
+                
+            }
+            
+            
+            else if (i===9){
+                
+                
+                document.view.qnum.value=i;
+                
+                
+                document.view.question.value ="In how many scenes does Pinocchio’s famous nose actually grow?\na) 1\nb) 3\nc) 5\nd) 7";
+                
+                
+                document.view.qans.value=""
+                
+                
+            }
+            
+            
+            else if (i===10){
+                
+                
+                document.view.qnum.value=i;
+                
+                
+                document.view.question.value ="What is the name of Bambi's true love?\na) Flower\nb) Faline\nc) Fairy\nd) Jacie";
+                
+                
+                document.view.qans.value=""
+                
+                
+            }
+            
+            else if (i===11){
+                
+                
+                document.view.qnum.value=i;
+                
+                
+                document.view.question.value ="In the movie Pinocchio, what do the little boys become when they visit Pleasure Island?\na)Old Men\nb) Whales\nc) Cows\nd) Donkeys";
+                
+                
+                document.view.qans.value=""
+                
+                
+            }
+            
+            else if (i===12){
+                
+                
+                document.view.qnum.value=i;
+                
+                
+                document.view.question.value ="What kind of dog was “Lady” in Lady and the Tramp?\na) Golden Retriever\nb) Mixed-breeds\nc) Cocker Spaniel\nd) St.Bernard";
+                
+                
+                document.view.qans.value=""
+                
+                
+            }
+            
+            else if (i===13){
+                
+                
+                document.view.qnum.value=i;
+                
+                
+                document.view.question.value ="What was Winnie the Pooh's favourite thing to eat?\na) Honey\nb) Piglet\nc) Leaves\nd) Candy";
+                
+                
+                document.view.qans.value=""
+                
+                
+            }
+            
+            else if (i===14){
+                
+                
+                document.view.qnum.value=i;
+                
+                
+                document.view.question.value ="Where did Peter Pan take Wendy, John and Michael?\na) Tinker Bell’s house\nb) Neverland\nc) The park\nd) His house";
+                
+                
+                document.view.qans.value=""
+                
+                
+            }
+            
+            else if (i===15){
+                
+                
+                
+                alert("You scored"+ " " + n/14*100+ "% on this quiz!")
+                alert("Thank you for playing!!")
+                
+                
+                
+            }
+            
+            
+            i++;
+            
+            
+        }
+        
+        
+            </script>
+        
+        
+    </head>
+    
+    
+    <body LINK="F7DD5E" VLINK="F7DD5E" ALINK="F7DD5E" onLoad="main()">
+        
+        
+        <br>
+        
+        
+        <FORM name="view">
+            
+            
+            Question: &nbsp;<input type="text" name="qnum" size="2" >&nbsp;<input type="button" name="go" value=" Next Question >" onClick=main()>
+                
+                
+                <br>
+                
+                
+                <br>
+                
+                
+                Answer:&nbsp;&nbsp;&nbsp; <input type="text" id="qans" size="2">&nbsp;<input type="button" value="Submit Answer >" onClick=support()>
+                    
+                    
+                    <br>
+                    
+                    
+                    <br>
+                    
+                    
+                    Score: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" id= "score" name="qscore" size="2">
+                        
+                        
+                        <br>
+                        
+                        
+                        <br>
+                        
+                        
+                        <TEXTAREA COLS=31 ROWS=9 id="question" wrap=virtual"></TEXTAREA>
+                            
+                            
+                            </FORM>
+                            
+                            
+                            </body>
+                            
+                            
+                            </html>
+                            
+                            
+                            
+                            
+                            
+                            
